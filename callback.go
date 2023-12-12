@@ -3,6 +3,8 @@ package curl
 /*
 #cgo freebsd CFLAGS: -I/usr/local/include
 #cgo freebsd LDFLAGS: -L/usr/local/lib -lcurl
+#cgo mips CFLAGS: -I/usr/local/mips/curl/include
+#cgo mips LDFLAGS: -L/usr/local/mips/curl/lib -lcurl
 #include <stdlib.h>
 #include <string.h>
 #include <curl/curl.h>
