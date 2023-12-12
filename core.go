@@ -5,6 +5,8 @@ package curl
 #cgo linux pkg-config: libcurl
 #cgo darwin LDFLAGS: -lcurl
 #cgo windows LDFLAGS: -lcurl
+#cgo mips CFLAGS: -I/usr/local/mips/curl/include
+#cgo mips LDFLAGS: -L/usr/local/mips/curl/lib -lcurl
 #include <stdlib.h>
 #include <curl/curl.h>
 
