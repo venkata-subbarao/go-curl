@@ -1,6 +1,8 @@
 package curl
 
 /*
+#cgo mips CFLAGS: -I/usr/local/mips/curl/include
+#cgo mips LDFLAGS: -L/usr/local/mips/curl/lib -lcurl
 #include <stdlib.h>
 #include <curl/curl.h>
 #include "callback.h"
